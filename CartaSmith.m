@@ -3,7 +3,7 @@
 %   This program plots a simple Smith Chart.  It calls
 %   on the functions realcirc, imcirc, and z2gamma.
 %
-%   Wentworth, 8/3/02
+%   Abilio Azevedo, 10/11/2016
 %
 %   Variables:
 %       a       circle radius
@@ -24,11 +24,12 @@ close all;
 %rl=[0.5 0.5 0.5 0.5];
 %xl=[.2 2 -2 -.2];
 %Impedancia da carga
-prompt = strcat('Diga a impedancia da carga (parte real)\n');
+prompt = strcat('Diga a impedancia da carga (parte real)\nSay the load impedance (real part)\n');
 rl(1) = str2num(input(prompt,'s'));
-prompt = strcat('Diga a impedancia da carga (parte imaginaria)\n');
+prompt = strcat('Diga a impedancia da carga (parte imaginaria)\nSay the load impedance (imaginary part)\n');
+prompt = strcat('Say the load impedance (real part)\n');
 xl(1) = str2num(input(prompt,'s'));
-prompt = strcat('Diga a distancia em direcao ao gerador em comprimentos de onda)\n');
+prompt = strcat('Diga a distancia em direcao ao gerador (em comprimentos de onda)\nSay the distance towards the generator (in wavelengths)\n');
 lambda = str2num(input(prompt,'s'));
 
 figure('Name','Carta de Smith')
